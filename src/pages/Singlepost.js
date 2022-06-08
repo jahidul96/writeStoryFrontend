@@ -71,7 +71,7 @@ export default function Singlepost() {
                 <div className='px-6 my-5 flex justify-between items-center'>
                     <div>
                         {
-                            post?.likes?.includes(user?._id) ? <i onClick={() => dislikePost(post._id)} className="fa-solid fa-heart text-red-600 text-lg md:text-2xl"><span className='ml-4 md:text-2xl text-lg -mt-2'>{post?.likes?.length}</span></i> : <i className="fa-solid fa-heart text-lg md:text-2xl text-black" onClick={() => likePost(post._id)}><span className='md:text-2xl text-lg font-semibold ml-4 -mt-2'>{post?.likes?.length}</span></i>
+                            post?.likes?.includes(user?._id) ? <i onClick={() => dislikePost(post._id)} className="fa-solid fa-heart text-red-600 text-2xl"><span className='ml-4 text-2xl -mt-2'>{post?.likes?.length}</span></i> : <i className="fa-solid fa-heart text-2xl text-black" onClick={() => likePost(post._id)}><span className='text-2xl  font-semibold ml-4 -mt-2'>{post?.likes?.length}</span></i>
                         }
                     </div>
                     {
